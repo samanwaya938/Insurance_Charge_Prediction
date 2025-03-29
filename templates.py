@@ -5,12 +5,14 @@ import logging
 project_name = "src"
 list_of_files = [
   ".github/workflows/.gitkeep",
+  "config/schema.yaml",
   f"{project_name}/__init__.py",
   f"{project_name}/components/__init__.py",
   f"{project_name}/utils/__init__.py",
   f"{project_name}/logger/__init__.py",
   f"{project_name}/exception/__init__.py",
   f"{project_name}/config/__init__.py",
+  f"{project_name}/utils/__init__.py",
   f"{project_name}/pipeline/__init__.py",
   f"{project_name}/pipeline/training_pipeline.py",
   f"{project_name}/pipeline/prediction_pipeline.py",
