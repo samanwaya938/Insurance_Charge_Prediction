@@ -11,5 +11,10 @@ class DataIngestionConfig:
 
 @dataclass(frozen=True)
 class DataValidationConfig:
-    schema_file_path: str = os.path.join("config","schema.yaml")
-    report_file_path: str = os.path.join("artifact","data_validation","validation_report.txt")
+  schema_file_path: str = os.path.join("config","schema.yaml")
+  report_file_path: str = os.path.join("artifact","data_validation","validation_report.txt")
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+  preproccesing_file_path = os.path.join("artifact","data_transformation","preprocessing.pkl")
+   
