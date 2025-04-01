@@ -7,5 +7,6 @@ PyYAML == 6.0.2
 setuptools == 78.1.0
 flask == 3.1.0
 mlflow == 2.21.2
+dagshub == 0.5.9
 -e .
 

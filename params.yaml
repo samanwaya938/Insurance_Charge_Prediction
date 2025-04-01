@@ -1,0 +1,27 @@
+Random Forest:
+  n_estimators: [100,200,300,500,800]
+  max_depth: [5,8,15,25,30]
+  min_samples_split: [2,5,10]
+  min_samples_leaf: [1,2,4]
+  max_features: ['sqrt', 'log2', None]
+  
+
+Linear Regression:
+  fit_intercept: [True, False]
+
+
+Decision Tree:
+  max_depth: [5,8,15,25,30]
+  min_samples_split: [2,5,10]
+  min_samples_leaf: [1,2,4]
+  max_features: ['sqrt', 'log2', None]
+  criterion: ['squared_error', 'friedman_mse', 'absolute_error', 'poisson']
+  splitter: ['best', 'random']
+
+Support Vector Regression:
+  kernel: ['linear', 'poly', 'rbf', 'sigmoid']
+  C: [0.1, 1, 10]
+  gamma: ['scale', 'auto']
+  epsilon: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  tol: [0.001, 0.0001, 0.00001]
+

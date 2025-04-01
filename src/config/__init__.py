@@ -17,4 +17,9 @@ class DataValidationConfig:
 @dataclass(frozen=True)
 class DataTransformationConfig:
   preproccesing_file_path = os.path.join("artifact","data_transformation","preprocessing.pkl")
+
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+  trained_model_file_path = os.path.join("artifact","model_trainer","model.pkl")
+  base_accuracy = 0.6
    

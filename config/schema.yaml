@@ -1,5 +1,5 @@
 columns:
-  index: int64
+  index: float64
   age: int64
   sex: object
   bmi: float64
