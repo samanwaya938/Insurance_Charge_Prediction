@@ -30,7 +30,7 @@ class DataValidation:
                 
             # Check data types
             for column, dtype in schema['columns'].items():
-                if df[column].dtype != dtype:
+                if str(df[column].dtype) != dtype:
                     logging.error(f"Datatype mismatch for {column}: Expected {df[column].dtype}, Found {dtype}")
                     validation_status = False
                     

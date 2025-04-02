@@ -11,7 +11,9 @@ if __name__ == '__main__':
     train_file_path, test_file_path = data_ingestion.initiate_data_ingestion()
 
     data_validation = DataValidation()
-    data_validation.initiate_data_validation(train_file_path, test_file_path)
+    validation_results = data_validation.initiate_data_validation(train_file_path, test_file_path)
+    if not (validation_results["train_data"] and validation_results["test_data"]):
+            raise Exception("Data validation failed. Please check the validation report for details.")
 
     data_transformation = DataTransformation()
     train_arr, test_arr, _ = data_transformation.initiate_data_transformation(train_file_path, test_file_path)
